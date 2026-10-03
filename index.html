@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#f6f3eb">
+ <meta name="description" content="A thoughtful English crossword with a new shape every time. Play CrossMorph, a free, endlessly replayable procedural puzzle.">
+ <title>CrossMorph — A crossword, reimagined</title>
+ <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+ <script defer src="database.js"></script><script defer src="generator.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+ <div class="page">
+  <header class="masthead">
+   <div class="edition-line"><span class="publication"><span class="star" aria-hidden="true">✳</span> THE CROSSWORD JOURNAL</span><button class="text-button" id="how-to"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4M12 16.5v.1"/></svg>How to play</button></div>
+   <div class="title-row"><div><h1>Cross<span>Morph</span><span class="title-period">.</span></h1><p>A crossword, reimagined. A new shape every time.</p></div><div class="masthead-note"><span class="small-label">A LITTLE CURIOSITY</span><span>goes a long way.</span></div></div>
+  </header>
+  <main>
+   <section class="toolbar" aria-label="Puzzle controls">
+    <div class="toolbar-primary"><button id="new-puzzle" class="button primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>New puzzle</button><div class="difficulty-wrap"><label for="difficulty">DIFFICULTY</label><select id="difficulty"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option></select></div></div>
+    <div class="toolbar-secondary"><button id="check" class="button secondary" title="Check entered letters in the entire puzzle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Check</button><button id="hint" class="button secondary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8 14a6 6 0 1 1 8 0c-1 1-1 2-1 2H9s0-1-1-2Z"/></svg>Hint <span class="hint-budget" id="hint-budget">5</span></button><button id="reset" class="button secondary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 2 8M4 4v6h6"/></svg>Reset</button></div>
+   </section>
+   <div class="workspace">
+    <section class="puzzle-panel" aria-label="Crossword puzzle">
+     <div class="puzzle-meta"><div><span class="issue-label" id="puzzle-label">YOUR FRESH CROSSWORD</span><span class="dimensions" id="dimensions">Composing…</span></div><button class="timer" id="timer-toggle" title="Hide solve timer" aria-label="Hide solve timer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v5l3 2M9 2h6M12 2v3"/></svg><span id="timer">00:00</span></button></div>
+     <div id="board-shell" class="board-shell"><div class="loading" id="loading" role="status"><span class="loading-symbol" aria-hidden="true">✳</span><span>GENERATING PUZZLE…</span><small>Finding a fresh way to cross paths.</small></div><div id="grid" class="grid" role="grid" aria-label="Crossword grid"></div></div>
+     <p id="grid-scroll-hint" class="grid-scroll-hint" hidden>Swipe or scroll sideways to see the full grid <span aria-hidden="true">↔</span></p>
+     <div class="selected-clue" id="selected-clue"><span id="selected-number" class="selected-number">—</span><div><span class="small-label" id="selected-direction">YOUR NEXT THOUGHT</span><p id="selected-text">Every answer begins with a little curiosity.</p></div><span id="selected-length" class="answer-length"></span></div>
+     <div class="progress-row"><div class="progress-caption"><span id="progress-label">0 of 0 letters filled</span><span id="progress-percent">0%</span></div><div class="progress-track"><div id="progress-bar"></div></div></div>
+     <div id="feedback" class="feedback" role="status" aria-live="polite">Select a clue. Follow a thought. Find the word.</div>
+     <div class="keyboard-note"><span><kbd>Tab</kbd> next clue</span><span><kbd>Space</kbd> switch direction</span><span><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> move</span></div>
+    </section>
+    <aside class="clue-panel" aria-label="Crossword clues">
+     <div class="clue-heading"><h2>The clues</h2><span id="answer-count">— ANSWERS</span></div>
+     <div class="clue-columns"><section aria-labelledby="across-title"><h3 id="across-title"><span class="direction-icon" aria-hidden="true">→</span> Across <span id="across-count"></span></h3><ol id="across-clues" class="clue-list"></ol></section><section aria-labelledby="down-title"><h3 id="down-title"><span class="direction-icon" aria-hidden="true">↓</span> Down <span id="down-count"></span></h3><ol id="down-clues" class="clue-list"></ol></section></div>
+     <div class="clue-footer"><span class="star" aria-hidden="true">✳</span><p>No two puzzles follow the same path.<br>That’s the beauty of a fresh start.</p></div>
+    </aside>
+   </div>
+   <section class="completion" id="completion" hidden aria-labelledby="complete-title"><span class="completion-ornament" aria-hidden="true">✳</span><div class="small-label">EVERY PIECE IN ITS PLACE</div><h2 id="complete-title">Puzzle complete.</h2><p>A little patience. A few good connections. Beautifully solved.</p><div class="results"><div><span>FINAL SCORE</span><strong id="final-score">0</strong></div><div><span>SOLVE TIME</span><strong id="final-time">00:00</strong></div><div><span>HINTS USED</span><strong id="final-hints">0</strong></div><div><span>INCORRECT CHECKS</span><strong id="final-checks">0</strong></div><div><span>DIFFICULTY</span><strong id="final-difficulty">Medium</strong></div></div><button id="complete-new" class="button primary">Find your next crossword <span aria-hidden="true">→</span></button><button id="review" class="text-button">Review the solved puzzle</button></section>
+  </main>
+  <footer class="page-footer"><span>CROSSMORPH <span class="footer-separator">/</span> MADE FOR CURIOUS MINDS</span><span>215 clues. Endless connections.</span></footer>
+ </div>
+ <dialog id="instructions" aria-labelledby="instructions-title"><button id="close-instructions" class="dialog-close" aria-label="Close instructions">×</button><span class="small-label">A MOMENT BEFORE YOU BEGIN</span><h2 id="instructions-title">Follow the connections.</h2><p>Every new puzzle has a different layout, made from a collection of English clues. Fill every white square to complete it.</p><dl><dt>Find your word</dt><dd>Click a clue or a square. Click a crossing square again, or press Space, to switch Across and Down.</dd><dt>Make your way</dt><dd>Type letters to move along the answer. Use arrow keys to move, Backspace to erase, and Tab / Shift+Tab for the next / previous clue. Enter switches direction.</dd><dt>A little help</dt><dd>Check marks filled letters as correct or incorrect, without revealing answers. Hint reveals one missing or incorrect letter in your selected word. Easy gives 9 hints, Medium 5, and Hard 3.</dd><dt>A fresh start</dt><dd>Reset clears your entries and solve statistics while keeping the same crossword. New puzzle creates an entirely new set of answers and a new shape. Changing difficulty also creates a new puzzle.</dd><dt>At your own pace</dt><dd>The timer begins with your first interaction and pauses while the page is hidden. Click the timer to hide it. Your progress is saved in this browser when storage is available.</dd><dt>The finishing touch</dt><dd>Your score rewards a completed crossword and its difficulty, with deductions for time, hints, and incorrect checks. There is no time limit.</dd></dl><button id="begin" class="button primary">Let’s puzzle <span aria-hidden="true">→</span></button></dialog>
+ <script>/* All gameplay code and data are bundled locally. */</script>
+</body>
+</html>

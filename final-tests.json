@@ -1,0 +1,12 @@
+{
+  "offlineFileOpening": true,
+  "remoteRequests": 0,
+  "fullKeyboardSolve": true,
+  "hintAndCheckScoreDeductions": true,
+  "perfectScore": 3500,
+  "assistedScore": 3340,
+  "completionNewPuzzle": true,
+  "finalControls": true,
+  "qaAbsentFromNormalPlay": true,
+  "errors": []
+}

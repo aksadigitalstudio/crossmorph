@@ -1,0 +1,942 @@
+{
+  "checks": [
+    {
+      "name": "Initial valid medium crossword",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Timer initially stopped",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Active clue and cell exist",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle A validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle A has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle B validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle B has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle C validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle C has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle D validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle D has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle E validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle E has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle F validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle F has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle G validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle G has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle H validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle H has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle I validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle I has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle J validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle J has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle K validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle K has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle L validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle L has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Generated puzzle M validates",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Puzzle M has fresh structure and words",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Across, Down, and cell numbering match all 13 grids",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Clue click selects corresponding answer",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Keyboard entry uppercases and advances",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Timer starts on interaction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Backspace on blank moves back and erases",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Backspace erases current filled letter",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Right arrow moves forward",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Left arrow moves backward",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Down arrow moves",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Up arrow moves",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Click crossing toggles direction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Space toggles direction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Enter toggles direction",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Tab selects next clue",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Shift+Tab returns to prior clue",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Escape exits crossword keyboard navigation",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Reset preserves layout and clears entries",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Empty check does not count as an incorrect check",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Check marks wrong letters without revealing answer",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Check recognizes corrected letter",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Hint reveals one correct selected letter",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Medium limits hints to five",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Reload restores puzzle, letters, and hint usage",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Timer can be hidden",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "How to play dialog opens",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Dialog closes with Escape",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Native input supports touch keyboard entry",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Complete puzzle solved using keyboard",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Completion state includes score and all statistics",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Timer stops at completion",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Solved puzzle can be reviewed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "New puzzle after completion makes a fresh grid",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "easy generates valid fresh puzzle",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "easy hint allowance",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "hard generates valid fresh puzzle",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "hard hint allowance",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "medium generates valid fresh puzzle",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "medium hint allowance",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Responsive 1920×1080",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Responsive 1280×800",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Responsive 1024×768",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Responsive 768×1024",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Responsive 390×844",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "No critical console or runtime errors",
+      "passed": true,
+      "details": "[]"
+    },
+    {
+      "name": "All bundled assets load",
+      "passed": true,
+      "details": "[]"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "puzzlesABC": [
+    {
+      "seed": 3331068293,
+      "width": 11,
+      "height": 16,
+      "answers": [
+        {
+          "answer": "FRICTION",
+          "clue": "The force that resists sliding between surfaces.",
+          "difficulty": "medium",
+          "category": "Science",
+          "id": 0,
+          "x": 9,
+          "y": 7,
+          "dir": "down",
+          "length": 8,
+          "number": 10
+        },
+        {
+          "answer": "CABIN",
+          "clue": "A small dwelling, or a room aboard a ship.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 1,
+          "x": 6,
+          "y": 9,
+          "dir": "across",
+          "length": 5,
+          "number": 12
+        },
+        {
+          "answer": "CARPET",
+          "clue": "Floor covering that softens footsteps.",
+          "difficulty": "easy",
+          "category": "Everyday",
+          "id": 2,
+          "x": 4,
+          "y": 11,
+          "dir": "across",
+          "length": 6,
+          "number": 13
+        },
+        {
+          "answer": "CIRCUIT",
+          "clue": "A complete path for an electric current.",
+          "difficulty": "medium",
+          "category": "Technology",
+          "id": 3,
+          "x": 6,
+          "y": 9,
+          "dir": "down",
+          "length": 7,
+          "number": 12
+        },
+        {
+          "answer": "HORIZON",
+          "clue": "The apparent line where sky and earth meet.",
+          "difficulty": "medium",
+          "category": "Nature",
+          "id": 4,
+          "x": 3,
+          "y": 14,
+          "dir": "across",
+          "length": 7,
+          "number": 14
+        },
+        {
+          "answer": "VOLCANO",
+          "clue": "An opening in Earth that can release molten rock.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 5,
+          "x": 4,
+          "y": 8,
+          "dir": "down",
+          "length": 7,
+          "number": 11
+        },
+        {
+          "answer": "CINEMA",
+          "clue": "The art of movies, or a place to watch them.",
+          "difficulty": "easy",
+          "category": "Culture",
+          "id": 6,
+          "x": 7,
+          "y": 4,
+          "dir": "down",
+          "length": 6,
+          "number": 8
+        },
+        {
+          "answer": "ACORN",
+          "clue": "An oak tree’s small, capped seed.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 7,
+          "x": 6,
+          "y": 4,
+          "dir": "across",
+          "length": 5,
+          "number": 7
+        },
+        {
+          "answer": "BALCONY",
+          "clue": "An outdoor platform attached to an upper floor.",
+          "difficulty": "easy",
+          "category": "Travel",
+          "id": 8,
+          "x": 2,
+          "y": 6,
+          "dir": "across",
+          "length": 7,
+          "number": 9
+        },
+        {
+          "answer": "BUTTON",
+          "clue": "A small fastener with a pressing second job.",
+          "difficulty": "medium",
+          "category": "Everyday",
+          "id": 9,
+          "x": 2,
+          "y": 6,
+          "dir": "down",
+          "length": 6,
+          "number": 9
+        },
+        {
+          "answer": "BASIL",
+          "clue": "A fragrant herb central to pesto.",
+          "difficulty": "medium",
+          "category": "Food",
+          "id": 10,
+          "x": 4,
+          "y": 2,
+          "dir": "down",
+          "length": 5,
+          "number": 5
+        },
+        {
+          "answer": "BRIDGE",
+          "clue": "A structure that spans a gap.",
+          "difficulty": "easy",
+          "category": "Travel",
+          "id": 11,
+          "x": 4,
+          "y": 2,
+          "dir": "across",
+          "length": 6,
+          "number": 5
+        },
+        {
+          "answer": "OPERA",
+          "clue": "A dramatic work performed through singing.",
+          "difficulty": "medium",
+          "category": "Culture",
+          "id": 12,
+          "x": 0,
+          "y": 3,
+          "dir": "across",
+          "length": 5,
+          "number": 6
+        },
+        {
+          "answer": "VOLTAGE",
+          "clue": "Electrical potential difference.",
+          "difficulty": "hard",
+          "category": "Science",
+          "id": 13,
+          "x": 0,
+          "y": 2,
+          "dir": "down",
+          "length": 7,
+          "number": 4
+        },
+        {
+          "answer": "POETRY",
+          "clue": "Literature shaped by rhythm, imagery, and often verse.",
+          "difficulty": "medium",
+          "category": "Culture",
+          "id": 14,
+          "x": 9,
+          "y": 0,
+          "dir": "down",
+          "length": 6,
+          "number": 3
+        },
+        {
+          "answer": "NOVEL",
+          "clue": "A long work of prose fiction.",
+          "difficulty": "easy",
+          "category": "Culture",
+          "id": 15,
+          "x": 2,
+          "y": 0,
+          "dir": "down",
+          "length": 5,
+          "number": 1
+        },
+        {
+          "answer": "SOAP",
+          "clue": "A bar that helps wash away dirt.",
+          "difficulty": "easy",
+          "category": "Everyday",
+          "id": 16,
+          "x": 6,
+          "y": 0,
+          "dir": "across",
+          "length": 4,
+          "number": 2
+        }
+      ],
+      "shape": "0,2|0,3|0,4|0,5|0,6|0,7|0,8|1,3|10,4|10,9|2,0|2,1|2,10|2,11|2,2|2,3|2,4|2,6|2,7|2,8|2,9|3,14|3,3|3,6|4,10|4,11|4,12|4,13|4,14|4,2|4,3|4,4|4,5|4,6|4,8|4,9|5,11|5,14|5,2|5,6|6,0|6,10|6,11|6,12|6,13|6,14|6,15|6,2|6,4|6,6|6,9|7,0|7,11|7,14|7,2|7,4|7,5|7,6|7,7|7,8|7,9|8,0|8,11|8,14|8,2|8,4|8,6|8,9|9,0|9,1|9,10|9,11|9,12|9,13|9,14|9,2|9,3|9,4|9,5|9,7|9,8|9,9"
+    },
+    {
+      "seed": 1406617378,
+      "width": 7,
+      "height": 18,
+      "answers": [
+        {
+          "answer": "AIRPORT",
+          "clue": "A place for taking off and touching down.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 0,
+          "x": 3,
+          "y": 11,
+          "dir": "down",
+          "length": 7,
+          "number": 10
+        },
+        {
+          "answer": "CHAIR",
+          "clue": "A seat usually intended for one.",
+          "difficulty": "easy",
+          "category": "Everyday",
+          "id": 1,
+          "x": 1,
+          "y": 11,
+          "dir": "across",
+          "length": 5,
+          "number": 9
+        },
+        {
+          "answer": "FERN",
+          "clue": "A leafy plant that reproduces with spores.",
+          "difficulty": "medium",
+          "category": "Nature",
+          "id": 2,
+          "x": 1,
+          "y": 13,
+          "dir": "across",
+          "length": 4,
+          "number": 11
+        },
+        {
+          "answer": "COFFEE",
+          "clue": "A brewed morning pick-me-up.",
+          "difficulty": "easy",
+          "category": "Everyday",
+          "id": 3,
+          "x": 1,
+          "y": 11,
+          "dir": "down",
+          "length": 6,
+          "number": 9
+        },
+        {
+          "answer": "LEMON",
+          "clue": "A tart yellow fruit.",
+          "difficulty": "easy",
+          "category": "Food",
+          "id": 4,
+          "x": 0,
+          "y": 15,
+          "dir": "across",
+          "length": 5,
+          "number": 12
+        },
+        {
+          "answer": "RESORT",
+          "clue": "A destination designed for holidays and recreation.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 5,
+          "x": 5,
+          "y": 7,
+          "dir": "down",
+          "length": 6,
+          "number": 7
+        },
+        {
+          "answer": "MATTER",
+          "clue": "Anything that has mass and takes up space.",
+          "difficulty": "medium",
+          "category": "Science",
+          "id": 6,
+          "x": 0,
+          "y": 7,
+          "dir": "across",
+          "length": 6,
+          "number": 6
+        },
+        {
+          "answer": "MOSS",
+          "clue": "A small green plant often carpeting damp rocks.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 7,
+          "x": 2,
+          "y": 9,
+          "dir": "across",
+          "length": 4,
+          "number": 8
+        },
+        {
+          "answer": "ALGORITHM",
+          "clue": "A step-by-step procedure for solving a problem.",
+          "difficulty": "medium",
+          "category": "Technology",
+          "id": 8,
+          "x": 2,
+          "y": 1,
+          "dir": "down",
+          "length": 9,
+          "number": 2
+        },
+        {
+          "answer": "LAVA",
+          "clue": "Molten rock after it reaches the surface.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 9,
+          "x": 2,
+          "y": 2,
+          "dir": "across",
+          "length": 4,
+          "number": 4
+        },
+        {
+          "answer": "ENVELOPE",
+          "clue": "A letter’s paper jacket.",
+          "difficulty": "medium",
+          "category": "Everyday",
+          "id": 10,
+          "x": 4,
+          "y": 0,
+          "dir": "down",
+          "length": 8,
+          "number": 1
+        },
+        {
+          "answer": "MIRROR",
+          "clue": "It gives back what it sees.",
+          "difficulty": "medium",
+          "category": "Everyday",
+          "id": 11,
+          "x": 0,
+          "y": 5,
+          "dir": "across",
+          "length": 6,
+          "number": 5
+        },
+        {
+          "answer": "ATLAS",
+          "clue": "A book that puts the world on its pages.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 12,
+          "x": 2,
+          "y": 17,
+          "dir": "across",
+          "length": 5,
+          "number": 13
+        },
+        {
+          "answer": "ATOM",
+          "clue": "A basic unit of a chemical element.",
+          "difficulty": "easy",
+          "category": "Science",
+          "id": 13,
+          "x": 0,
+          "y": 2,
+          "dir": "down",
+          "length": 4,
+          "number": 3
+        }
+      ],
+      "shape": "0,15|0,2|0,3|0,4|0,5|0,7|1,11|1,12|1,13|1,14|1,15|1,16|1,5|1,7|2,1|2,11|2,13|2,15|2,17|2,2|2,3|2,4|2,5|2,6|2,7|2,8|2,9|3,11|3,12|3,13|3,14|3,15|3,16|3,17|3,2|3,5|3,7|3,9|4,0|4,1|4,11|4,13|4,15|4,17|4,2|4,3|4,4|4,5|4,6|4,7|4,9|5,10|5,11|5,12|5,17|5,2|5,5|5,7|5,8|5,9|6,17"
+    },
+    {
+      "seed": 2785704375,
+      "width": 9,
+      "height": 18,
+      "answers": [
+        {
+          "answer": "ENCRYPTION",
+          "clue": "The process of scrambling data to protect it.",
+          "difficulty": "hard",
+          "category": "Technology",
+          "id": 0,
+          "x": 6,
+          "y": 2,
+          "dir": "down",
+          "length": 10,
+          "number": 4
+        },
+        {
+          "answer": "RECIPE",
+          "clue": "A set of instructions for making a dish.",
+          "difficulty": "easy",
+          "category": "Food",
+          "id": 1,
+          "x": 1,
+          "y": 2,
+          "dir": "across",
+          "length": 6,
+          "number": 3
+        },
+        {
+          "answer": "CANOPY",
+          "clue": "The leafy roof of a forest.",
+          "difficulty": "medium",
+          "category": "Nature",
+          "id": 2,
+          "x": 1,
+          "y": 6,
+          "dir": "across",
+          "length": 6,
+          "number": 6
+        },
+        {
+          "answer": "FRICTION",
+          "clue": "The force that resists sliding between surfaces.",
+          "difficulty": "medium",
+          "category": "Science",
+          "id": 3,
+          "x": 4,
+          "y": 0,
+          "dir": "down",
+          "length": 8,
+          "number": 2
+        },
+        {
+          "answer": "CHORUS",
+          "clue": "A song section that keeps coming back.",
+          "difficulty": "medium",
+          "category": "Culture",
+          "id": 4,
+          "x": 1,
+          "y": 6,
+          "dir": "down",
+          "length": 6,
+          "number": 6
+        },
+        {
+          "answer": "SOUVENIR",
+          "clue": "Something brought home to remember a trip.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 5,
+          "x": 1,
+          "y": 11,
+          "dir": "across",
+          "length": 8,
+          "number": 10
+        },
+        {
+          "answer": "GENETICS",
+          "clue": "The study of inherited traits.",
+          "difficulty": "medium",
+          "category": "Science",
+          "id": 6,
+          "x": 0,
+          "y": 4,
+          "dir": "across",
+          "length": 8,
+          "number": 5
+        },
+        {
+          "answer": "OCEAN",
+          "clue": "One of Earth’s vast bodies of salt water.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 7,
+          "x": 2,
+          "y": 0,
+          "dir": "down",
+          "length": 5,
+          "number": 1
+        },
+        {
+          "answer": "DRONE",
+          "clue": "An aircraft flown without a person aboard.",
+          "difficulty": "medium",
+          "category": "Technology",
+          "id": 8,
+          "x": 0,
+          "y": 9,
+          "dir": "across",
+          "length": 5,
+          "number": 7
+        },
+        {
+          "answer": "ENVELOPE",
+          "clue": "A letter’s paper jacket.",
+          "difficulty": "medium",
+          "category": "Everyday",
+          "id": 9,
+          "x": 4,
+          "y": 9,
+          "dir": "down",
+          "length": 8,
+          "number": 8
+        },
+        {
+          "answer": "AIRPORT",
+          "clue": "A place for taking off and touching down.",
+          "difficulty": "medium",
+          "category": "Travel",
+          "id": 10,
+          "x": 0,
+          "y": 14,
+          "dir": "across",
+          "length": 7,
+          "number": 11
+        },
+        {
+          "answer": "FOREST",
+          "clue": "A large area covered with trees.",
+          "difficulty": "easy",
+          "category": "Nature",
+          "id": 11,
+          "x": 8,
+          "y": 9,
+          "dir": "down",
+          "length": 6,
+          "number": 9
+        },
+        {
+          "answer": "OXYGEN",
+          "clue": "The gas our bodies need from the air.",
+          "difficulty": "easy",
+          "category": "Science",
+          "id": 12,
+          "x": 0,
+          "y": 16,
+          "dir": "across",
+          "length": 6,
+          "number": 12
+        },
+        {
+          "answer": "ATOM",
+          "clue": "A basic unit of a chemical element.",
+          "difficulty": "easy",
+          "category": "Science",
+          "id": 13,
+          "x": 0,
+          "y": 14,
+          "dir": "down",
+          "length": 4,
+          "number": 11
+        }
+      ],
+      "shape": "0,14|0,15|0,16|0,17|0,4|0,9|1,10|1,11|1,14|1,16|1,2|1,4|1,6|1,7|1,8|1,9|2,0|2,1|2,11|2,14|2,16|2,2|2,3|2,4|2,6|2,9|3,11|3,14|3,16|3,2|3,4|3,6|3,9|4,0|4,1|4,10|4,11|4,12|4,13|4,14|4,15|4,16|4,2|4,3|4,4|4,5|4,6|4,7|4,9|5,11|5,14|5,16|5,2|5,4|5,6|6,10|6,11|6,14|6,2|6,3|6,4|6,5|6,6|6,7|6,8|6,9|7,11|7,4|8,10|8,11|8,12|8,13|8,14|8,9"
+    }
+  ]
+}
